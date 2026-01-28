@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: raw
+    database: SAMSUNG_PROD
+    tables:
+      - name: ECOM_SALES_REPORT_DE
+        schema: STAGE_HYBRIS
+      - name: DIM_ECOM_PROMOTIONS
+        schema: MODEL_ECOMMERCE
+      - name: SAMSUNG_SHOP_PRODUCT_INFORMATION_DE
+        schema: STAGE_PRODUCT_INFORMATION_MANAGEMENT
+      - name: D2C_MAPPING_DE
+        schema: STAGE_PRODUCT_INFORMATION_MANAGEMENT
+      - name: DIM_SAMSUNG_PRODUCT_LEVEL_INFORMATION
+        schema: MODEL_ECOMMERCE
+      - name: AFFILIATE_REPORT_PRODUCT_MAPPING
+        schema: STAGE_AWIN
