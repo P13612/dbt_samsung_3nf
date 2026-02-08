@@ -1,0 +1,360 @@
+[0m19:15:17.493047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f130c0a1060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f130b0349d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f130b0349a0>]}
+
+
+============================== 19:15:17.512730 | 0e0a51ec-81b4-4edc-a1f3-827ba356bb3b ==============================
+[0m19:15:17.512730 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:15:17.513183 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'profiles_dir': '.', 'warn_error': 'None', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'version_check': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': '/home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/logs', 'invocation_command': 'dbt build --profiles-dir .', 'empty': 'False', 'quiet': 'False', 'partial_parse': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m19:15:17.517651 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m19:15:17.518131 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "samsung_ecommerce", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+[0m19:15:17.526247 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 0.08261436, "process_in_blocks": "35328", "process_kernel_time": 0.089578, "process_mem_max_rss": "94732", "process_out_blocks": "16", "process_user_time": 1.482114}
+[0m19:15:17.526775 [debug] [MainThread]: Command `dbt build` failed at 19:15:17.526644 after 0.08 seconds
+[0m19:15:17.527109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f130c0a1060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f130b0375e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f130b036890>]}
+[0m19:15:17.527448 [debug] [MainThread]: Flushing usage events
+[0m19:15:18.244879 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:15:33.557850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10175d0700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10165641c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1016564160>]}
+
+
+============================== 19:15:33.559785 | 0b760238-dc1b-4a78-9cdb-33f897dc50bf ==============================
+[0m19:15:33.559785 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:15:33.560221 [debug] [MainThread]: running dbt with arguments {'log_path': '/home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/logs', 'static_parser': 'True', 'fail_fast': 'False', 'debug': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt build --profiles-dir .', 'indirect_selection': 'eager', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'no_print': 'None', 'write_json': 'True', 'warn_error': 'None', 'profiles_dir': '.', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'quiet': 'False', 'introspect': 'True', 'printer_width': '80', 'log_format': 'default', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False'}
+[0m19:15:33.871618 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:15:33.872032 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:15:33.872365 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:15:34.023116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b760238-dc1b-4a78-9cdb-33f897dc50bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe7dabc10>]}
+[0m19:15:34.114203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0b760238-dc1b-4a78-9cdb-33f897dc50bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1016dff370>]}
+[0m19:15:34.114846 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m19:15:34.235958 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m19:15:34.236525 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:15:34.236848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0b760238-dc1b-4a78-9cdb-33f897dc50bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe896f730>]}
+[0m19:15:35.284051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0b760238-dc1b-4a78-9cdb-33f897dc50bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe5748130>]}
+[0m19:15:35.346795 [debug] [MainThread]: Wrote artifact WritableManifest to /home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/target/manifest.json
+[0m19:15:35.347933 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/target/semantic_manifest.json
+[0m19:15:35.462231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0b760238-dc1b-4a78-9cdb-33f897dc50bf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe574d390>]}
+[0m19:15:35.462725 [info ] [MainThread]: Found 14 models, 6 sources, 523 macros
+[0m19:15:35.464681 [info ] [MainThread]: 
+[0m19:15:35.465023 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:15:35.465330 [info ] [MainThread]: 
+[0m19:15:35.465776 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:15:35.470859 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SAMSUNG_DEV'
+[0m19:15:35.529496 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SAMSUNG_DEV'
+[0m19:15:35.797873 [debug] [ThreadPool]: Using snowflake connection "list_SAMSUNG_DEV"
+[0m19:15:35.800408 [debug] [ThreadPool]: Using snowflake connection "list_SAMSUNG_DEV"
+[0m19:15:35.802338 [debug] [ThreadPool]: On list_SAMSUNG_DEV: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:15:35.804705 [debug] [ThreadPool]: On list_SAMSUNG_DEV: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:15:35.806661 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:15:35.808631 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:15:35.811287 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:15:35.813852 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:15:35.815891 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:15:35.817899 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:15:35.820164 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m19:15:35.822351 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m19:15:35.824494 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:15:35.826494 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:15:35.831433 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:15:35.833220 [debug] [MainThread]: Connection 'list_SAMSUNG_DEV' was left open.
+[0m19:15:35.835013 [debug] [MainThread]: On list_SAMSUNG_DEV: No close available on handle
+[0m19:15:35.836359 [debug] [MainThread]: Connection 'list_SAMSUNG_DEV' was left open.
+[0m19:15:35.836726 [debug] [MainThread]: On list_SAMSUNG_DEV: No close available on handle
+[0m19:15:35.837007 [info ] [MainThread]: 
+[0m19:15:35.837347 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.37 seconds (0.37s).
+[0m19:15:35.837807 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "SAMSUNG_DEV"
+  Database Error
+    [Errno 2] No such file or directory: '/home/peter/.gemini/tmp/25e52c3509f47cb6111f76ceab9917c97d343aed1e/unencrypted_private_key.der'
+[0m19:15:35.838509 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 2.3268387, "process_in_blocks": "4280", "process_kernel_time": 0.104118, "process_mem_max_rss": "181236", "process_out_blocks": "2400", "process_user_time": 3.876416}
+[0m19:15:35.838962 [debug] [MainThread]: Command `dbt build` failed at 19:15:35.838879 after 2.33 seconds
+[0m19:15:35.839293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f10175d0700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe57bfe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0fe783fb50>]}
+[0m19:15:35.839649 [debug] [MainThread]: Flushing usage events
+[0m19:15:36.299522 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:15:49.285723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d37af8700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d36a741c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d36a74160>]}
+
+
+============================== 19:15:49.287677 | 33283de8-c505-4a5f-a725-042e9d0bf818 ==============================
+[0m19:15:49.287677 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:15:49.288122 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'debug': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '.', 'partial_parse': 'True', 'invocation_command': 'dbt build --profiles-dir .', 'use_experimental_parser': 'False', 'log_format': 'default', 'quiet': 'False', 'fail_fast': 'False', 'empty': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'write_json': 'True', 'warn_error': 'None', 'log_path': '/home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/logs', 'introspect': 'True', 'printer_width': '80'}
+[0m19:15:49.596982 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:15:49.597400 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:15:49.597747 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:15:49.741004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '33283de8-c505-4a5f-a725-042e9d0bf818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d08d56b00>]}
+[0m19:15:49.832258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '33283de8-c505-4a5f-a725-042e9d0bf818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d08da6a40>]}
+[0m19:15:49.832937 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m19:15:49.909505 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m19:15:49.999136 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:15:49.999490 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:15:50.032717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '33283de8-c505-4a5f-a725-042e9d0bf818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d03ef4130>]}
+[0m19:15:50.100934 [debug] [MainThread]: Wrote artifact WritableManifest to /home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/target/manifest.json
+[0m19:15:50.102111 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/target/semantic_manifest.json
+[0m19:15:50.117424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '33283de8-c505-4a5f-a725-042e9d0bf818', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d03e83820>]}
+[0m19:15:50.117833 [info ] [MainThread]: Found 14 models, 6 sources, 523 macros
+[0m19:15:50.119849 [info ] [MainThread]: 
+[0m19:15:50.120207 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:15:50.120528 [info ] [MainThread]: 
+[0m19:15:50.120982 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:15:50.125427 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SAMSUNG_DEV'
+[0m19:15:50.125909 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SAMSUNG_DEV'
+[0m19:15:50.159871 [debug] [ThreadPool]: Using snowflake connection "list_SAMSUNG_DEV"
+[0m19:15:50.160349 [debug] [ThreadPool]: Using snowflake connection "list_SAMSUNG_DEV"
+[0m19:15:50.160747 [debug] [ThreadPool]: On list_SAMSUNG_DEV: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:15:50.161181 [debug] [ThreadPool]: On list_SAMSUNG_DEV: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:15:50.161531 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:15:50.161872 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:15:50.162469 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:15:50.162827 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:15:50.163187 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m19:15:50.163559 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:15:50.163878 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:15:50.164196 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:15:50.164797 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m19:15:50.165109 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:15:50.165757 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:15:50.166058 [debug] [MainThread]: Connection 'list_SAMSUNG_DEV' was left open.
+[0m19:15:50.166356 [debug] [MainThread]: On list_SAMSUNG_DEV: No close available on handle
+[0m19:15:50.166634 [debug] [MainThread]: Connection 'list_SAMSUNG_DEV' was left open.
+[0m19:15:50.166970 [debug] [MainThread]: On list_SAMSUNG_DEV: No close available on handle
+[0m19:15:50.167262 [info ] [MainThread]: 
+[0m19:15:50.167588 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.05 seconds (0.05s).
+[0m19:15:50.168022 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "SAMSUNG_DEV"
+  Database Error
+    Unable to load PEM file. See https://cryptography.io/en/latest/faq/#why-can-t-i-import-my-pem-file for more details. MalformedFraming
+[0m19:15:50.168692 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 0.9285576, "process_in_blocks": "0", "process_kernel_time": 0.111729, "process_mem_max_rss": "176008", "process_out_blocks": "1248", "process_user_time": 2.869063}
+[0m19:15:50.169215 [debug] [MainThread]: Command `dbt build` failed at 19:15:50.169128 after 0.93 seconds
+[0m19:15:50.169559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d37af8700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d03e82c80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d03cda6e0>]}
+[0m19:15:50.169917 [debug] [MainThread]: Flushing usage events
+[0m19:15:50.642454 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:16:04.224855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa32b9d8760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa32a95d240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa32a95d1e0>]}
+
+
+============================== 19:16:04.226826 | ce876b34-1631-48b4-939a-3a1f86d7d8f7 ==============================
+[0m19:16:04.226826 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:16:04.227265 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'log_path': '/home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/logs', 'printer_width': '80', 'use_colors': 'True', 'profiles_dir': '.', 'quiet': 'False', 'version_check': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'empty': 'False', 'invocation_command': 'dbt build --profiles-dir .', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'target_path': 'None', 'log_format': 'default'}
+[0m19:16:04.531359 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:16:04.531796 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:16:04.532125 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:16:04.671933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ce876b34-1631-48b4-939a-3a1f86d7d8f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2fcc36ef0>]}
+[0m19:16:04.762807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ce876b34-1631-48b4-939a-3a1f86d7d8f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2fcc63460>]}
+[0m19:16:04.763458 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m19:16:04.837505 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m19:16:04.925239 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:16:04.925667 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:16:04.957911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ce876b34-1631-48b4-939a-3a1f86d7d8f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2f7df4190>]}
+[0m19:16:05.023994 [debug] [MainThread]: Wrote artifact WritableManifest to /home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/target/manifest.json
+[0m19:16:05.025124 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/target/semantic_manifest.json
+[0m19:16:05.040516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ce876b34-1631-48b4-939a-3a1f86d7d8f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2f7d7a7a0>]}
+[0m19:16:05.040943 [info ] [MainThread]: Found 14 models, 6 sources, 523 macros
+[0m19:16:05.042803 [info ] [MainThread]: 
+[0m19:16:05.043156 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:16:05.043478 [info ] [MainThread]: 
+[0m19:16:05.043927 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:16:05.048310 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SAMSUNG_DEV'
+[0m19:16:05.048783 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SAMSUNG_DEV'
+[0m19:16:05.079566 [debug] [ThreadPool]: Using snowflake connection "list_SAMSUNG_DEV"
+[0m19:16:05.080002 [debug] [ThreadPool]: Using snowflake connection "list_SAMSUNG_DEV"
+[0m19:16:05.080339 [debug] [ThreadPool]: On list_SAMSUNG_DEV: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:16:05.080692 [debug] [ThreadPool]: On list_SAMSUNG_DEV: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:16:05.081041 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:16:05.081381 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:16:05.082923 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:16:05.083264 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:16:05.083654 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:16:05.084058 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m19:16:05.084394 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:16:05.084704 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:16:05.085117 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m19:16:05.085797 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:16:05.086340 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:16:05.086634 [debug] [MainThread]: Connection 'list_SAMSUNG_DEV' was left open.
+[0m19:16:05.086975 [debug] [MainThread]: On list_SAMSUNG_DEV: No close available on handle
+[0m19:16:05.087254 [debug] [MainThread]: Connection 'list_SAMSUNG_DEV' was left open.
+[0m19:16:05.087539 [debug] [MainThread]: On list_SAMSUNG_DEV: No close available on handle
+[0m19:16:05.087825 [info ] [MainThread]: 
+[0m19:16:05.088147 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.04 seconds (0.04s).
+[0m19:16:05.088572 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "SAMSUNG_DEV"
+  Database Error
+    Incorrect password, could not decrypt key
+[0m19:16:05.089236 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 0.9099043, "process_in_blocks": "0", "process_kernel_time": 0.087515, "process_mem_max_rss": "176940", "process_out_blocks": "1256", "process_user_time": 2.852225}
+[0m19:16:05.089765 [debug] [MainThread]: Command `dbt build` failed at 19:16:05.089679 after 0.91 seconds
+[0m19:16:05.090106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa32b9d8760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2f7de2560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2f7bd4310>]}
+[0m19:16:05.090461 [debug] [MainThread]: Flushing usage events
+[0m19:16:05.555600 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:21:20.070961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54714dc760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5470470220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54704701c0>]}
+
+
+============================== 19:21:20.072890 | 3a148a41-c244-4e08-be7c-2bf6eb145368 ==============================
+[0m19:21:20.072890 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:21:20.073372 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'printer_width': '80', 'empty': 'False', 'warn_error': 'None', 'debug': 'False', 'indirect_selection': 'eager', 'static_parser': 'True', 'cache_selected_only': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'profiles_dir': '.', 'log_format': 'default', 'write_json': 'True', 'invocation_command': 'dbt build --profiles-dir .', 'no_print': 'None', 'introspect': 'True', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/logs', 'target_path': 'None'}
+[0m19:21:20.381903 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:21:20.382353 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:21:20.382723 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:21:20.528394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3a148a41-c244-4e08-be7c-2bf6eb145368', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f547137feb0>]}
+[0m19:21:20.619902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3a148a41-c244-4e08-be7c-2bf6eb145368', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f547061a560>]}
+[0m19:21:20.620548 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m19:21:20.697211 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m19:21:20.785743 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:21:20.786139 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:21:20.819166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3a148a41-c244-4e08-be7c-2bf6eb145368', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5441704190>]}
+[0m19:21:20.886572 [debug] [MainThread]: Wrote artifact WritableManifest to /home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/target/manifest.json
+[0m19:21:20.887804 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/target/semantic_manifest.json
+[0m19:21:20.903308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3a148a41-c244-4e08-be7c-2bf6eb145368', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f544188a9e0>]}
+[0m19:21:20.903732 [info ] [MainThread]: Found 14 models, 6 sources, 523 macros
+[0m19:21:20.905605 [info ] [MainThread]: 
+[0m19:21:20.905958 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:21:20.906279 [info ] [MainThread]: 
+[0m19:21:20.906733 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:21:20.911145 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SAMSUNG_DEV'
+[0m19:21:20.918091 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SAMSUNG_DEV'
+[0m19:21:20.939726 [debug] [ThreadPool]: Using snowflake connection "list_SAMSUNG_DEV"
+[0m19:21:20.940057 [debug] [ThreadPool]: On list_SAMSUNG_DEV: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:21:20.940349 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:21:20.940788 [debug] [ThreadPool]: Using snowflake connection "list_SAMSUNG_DEV"
+[0m19:21:20.941092 [debug] [ThreadPool]: On list_SAMSUNG_DEV: show terse schemas in database SAMSUNG_DEV
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV"} */
+[0m19:21:20.941378 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:21:21.940813 [debug] [ThreadPool]: SQL status: SUCCESS 20 in 1.000 seconds
+[0m19:21:22.112989 [debug] [ThreadPool]: SQL status: SUCCESS 20 in 1.171 seconds
+[0m19:21:22.121895 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_SAMSUNG_DEV, now create_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE)
+[0m19:21:22.124212 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_SAMSUNG_DEV, now create_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING)
+[0m19:21:22.126645 [debug] [ThreadPool]: Creating schema "database: "SAMSUNG_DEV"
+schema: "MODEL_ECOMMERCE_MODEL_ECOMMERCE"
+"
+[0m19:21:22.129207 [debug] [ThreadPool]: Creating schema "database: "SAMSUNG_DEV"
+schema: "MODEL_ECOMMERCE_STAGING"
+"
+[0m19:21:22.160111 [debug] [ThreadPool]: Using snowflake connection "create_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING"
+[0m19:21:22.162042 [debug] [ThreadPool]: On create_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING: create schema if not exists SAMSUNG_DEV.MODEL_ECOMMERCE_STAGING
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "create_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING"} */
+[0m19:21:22.155730 [debug] [ThreadPool]: Using snowflake connection "create_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE"
+[0m19:21:22.165460 [debug] [ThreadPool]: On create_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE: create schema if not exists SAMSUNG_DEV.MODEL_ECOMMERCE_MODEL_ECOMMERCE
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "create_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE"} */
+[0m19:21:22.243536 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c209ed-0002-beff-0000-35810d81adc6
+[0m19:21:22.246475 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c209ed-0002-beff-0000-35810d81adca
+[0m19:21:22.248476 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'SAMSUNG_DEV'.
+[0m19:21:22.250472 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'SAMSUNG_DEV'.
+[0m19:21:22.253082 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m19:21:22.255702 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m19:21:22.257733 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:21:22.259788 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:21:22.264505 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:21:22.266289 [debug] [MainThread]: Connection 'create_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE' was left open.
+[0m19:21:22.268098 [debug] [MainThread]: On create_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE: Close
+[0m19:21:22.368721 [debug] [MainThread]: Connection 'create_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING' was left open.
+[0m19:21:22.370739 [debug] [MainThread]: On create_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING: Close
+[0m19:21:22.478439 [info ] [MainThread]: 
+[0m19:21:22.480062 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 1.57 seconds (1.57s).
+[0m19:21:22.481857 [error] [MainThread]: Encountered an error:
+Database Error
+  003001 (42501): SQL access control error:
+  Insufficient privileges to operate on database 'SAMSUNG_DEV'.
+[0m19:21:22.484502 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 2.4584992, "process_in_blocks": "320", "process_kernel_time": 0.115803, "process_mem_max_rss": "187680", "process_out_blocks": "1272", "process_user_time": 3.278447}
+[0m19:21:22.486161 [debug] [MainThread]: Command `dbt build` failed at 19:21:22.485807 after 2.46 seconds
+[0m19:21:22.487570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54714dc760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54416bfe80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f544175d030>]}
+[0m19:21:22.489098 [debug] [MainThread]: Flushing usage events
+[0m19:21:22.995181 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:26:44.579697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1b6584760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1b551c220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1b551c1c0>]}
+
+
+============================== 19:26:44.589756 | ffd7f9a6-1d94-4dd4-8fbb-0f3cbbe35ee0 ==============================
+[0m19:26:44.589756 [info ] [MainThread]: Running with dbt=1.10.9
+[0m19:26:44.590190 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'static_parser': 'True', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'no_print': 'None', 'write_json': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf', 'log_path': '/home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/logs', 'log_format': 'default', 'indirect_selection': 'eager', 'partial_parse': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'debug': 'False', 'introspect': 'True', 'invocation_command': 'dbt compile', 'empty': 'False', 'quiet': 'False'}
+[0m19:26:47.957149 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:26:47.959581 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:26:47.961628 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:26:48.587134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ffd7f9a6-1d94-4dd4-8fbb-0f3cbbe35ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1b54ee800>]}
+[0m19:26:48.716680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ffd7f9a6-1d94-4dd4-8fbb-0f3cbbe35ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1b7c43490>]}
+[0m19:26:48.730788 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m19:26:48.963411 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m19:26:49.203563 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m19:26:49.206386 [debug] [MainThread]: Partial parsing: updated file: samsung_ecommerce_3nf://models/staging/stg_samsung_product_level_information.sql
+[0m19:26:49.208641 [debug] [MainThread]: Partial parsing: updated file: samsung_ecommerce_3nf://models/staging/stg_affiliate_report_product_mapping.sql
+[0m19:26:49.461539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ffd7f9a6-1d94-4dd4-8fbb-0f3cbbe35ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1867861d0>]}
+[0m19:26:49.528033 [debug] [MainThread]: Wrote artifact WritableManifest to /home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/target/manifest.json
+[0m19:26:49.540828 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/target/semantic_manifest.json
+[0m19:26:49.708183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ffd7f9a6-1d94-4dd4-8fbb-0f3cbbe35ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb18694be50>]}
+[0m19:26:49.708805 [info ] [MainThread]: Found 14 models, 6 sources, 523 macros
+[0m19:26:49.709258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ffd7f9a6-1d94-4dd4-8fbb-0f3cbbe35ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb18672c130>]}
+[0m19:26:49.711313 [info ] [MainThread]: 
+[0m19:26:49.711778 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:26:49.712196 [info ] [MainThread]: 
+[0m19:26:49.712793 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:26:49.719011 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE'
+[0m19:26:49.724924 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING'
+[0m19:26:49.874179 [debug] [ThreadPool]: Using snowflake connection "list_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE"
+[0m19:26:49.875279 [debug] [ThreadPool]: On list_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE: show objects in SAMSUNG_DEV.MODEL_ECOMMERCE_MODEL_ECOMMERCE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE"} */;
+[0m19:26:49.876550 [debug] [ThreadPool]: Using snowflake connection "list_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING"
+[0m19:26:49.877534 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:26:49.878547 [debug] [ThreadPool]: On list_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING: show objects in SAMSUNG_DEV.MODEL_ECOMMERCE_STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING"} */;
+[0m19:26:50.016912 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:26:51.312396 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show objects in SAMSUNG_DEV.MODEL_ECOMMERCE_MODEL_ECOMMERCE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE"} */;
+[0m19:26:51.313068 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:26:51.314215 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show objects in SAMSUNG_DEV.MODEL_ECOMMERCE_STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "samsung_ecommerce", "target_name": "dev", "connection_name": "list_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING"} */;
+[0m19:26:51.314943 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m19:26:51.315596 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:26:51.316268 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:26:51.317007 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m19:26:51.318174 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:26:51.319248 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:26:51.319921 [debug] [MainThread]: Connection 'list_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE' was left open.
+[0m19:26:51.320608 [debug] [MainThread]: On list_SAMSUNG_DEV_MODEL_ECOMMERCE_MODEL_ECOMMERCE: No close available on handle
+[0m19:26:51.321363 [debug] [MainThread]: Connection 'list_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING' was left open.
+[0m19:26:51.322129 [debug] [MainThread]: On list_SAMSUNG_DEV_MODEL_ECOMMERCE_STAGING: No close available on handle
+[0m19:26:51.323012 [error] [MainThread]: Encountered an error:
+Database Error
+  250001 (08001): Failed to connect to DB: rw61941.eu-west-2.aws.snowflakecomputing.com:443. JWT token is invalid. [3ce04afc-49ec-499c-a967-e5bc43c111a8]
+[0m19:26:51.335835 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 6.8064594, "process_in_blocks": "165944", "process_kernel_time": 0.537841, "process_mem_max_rss": "190964", "process_out_blocks": "5680", "process_user_time": 6.058867}
+[0m19:26:51.336500 [debug] [MainThread]: Command `dbt compile` failed at 19:26:51.336413 after 6.81 seconds
+[0m19:26:51.336885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1b6584760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1867f1f60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb184867280>]}
+[0m19:26:51.337250 [debug] [MainThread]: Flushing usage events
+[0m19:26:52.101878 [debug] [MainThread]: An error was encountered while trying to flush usage events

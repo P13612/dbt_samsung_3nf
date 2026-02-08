@@ -1,0 +1,29 @@
+# For more information on how to configure the profiles.yml file,
+# please see: https://docs.getdbt.com/docs/core/connect-data-platform/profiles.yml
+
+samsung_ecommerce:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: rw61941.eu-west-2.aws
+      user: PETER_BETZLER
+      warehouse: WH_PETER_BETZLER
+      database: SAMSUNG_DEV
+      schema: MODEL_ECOMMERCE
+      threads: 4
+      client_session_keep_alive: False
+      private_key_path: /home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/PETER_BETZLER_private_key_pkcs8
+      private_key_passphrase: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PASSPHRASE') }}"
+
+    prod:
+      type: snowflake
+      account: rw61941.eu-west-2.aws
+      user: PETER_BETZLER
+      warehouse: WH_PETER_BETZLER
+      database: SAMSUNG_PROD
+      schema: MODEL_ECOMMERCE
+      threads: 4
+      client_session_keep_alive: False
+      private_key_path: /home/peter/SAMSUNG/CHEIL_3NF/dbt_samsung_3nf/PETER_BETZLER_private_key_pkcs8
+      private_key_passphrase: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PASSPHRASE') }}"

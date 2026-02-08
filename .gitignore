@@ -1,0 +1,3 @@
+# Ignore sensitive key files
+PETER_BETZLER_private_key
+PETER_BETZLER_private_key_pkcs8
